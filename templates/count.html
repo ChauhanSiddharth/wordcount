@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+        h1,h2,h3,p{
+            text-align: center;
+        }
+        #form{
+            text-align: center;
+        }
+        table{
+            text-align: left;
+        }
+        .two{
+            text-align: right;
+        }
+        a{
+            float: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Word Count</h1>
+    <br><br>
+    <h3>There {{ text_one }} {{ count }} {{ text_two }} in your text.</h3>
+    <h3>Your Full Text:</h3>
+    <p>{{ fulltext }}</p>
+    <h3>Words Repeating</h3>
+    <p>
+        {% for word, counts in sortwords %}
+        <table align="center" width="120" cellpadding="2px">
+        <tr><td>{{ word }}</td>
+        <td class="two">{{ counts }}</td></tr>
+        </table>
+
+        {% endfor %}
+
+    </p>
+    <center><a href="{% url 'home' %}"><input type="button" value="Count Words Again" /> </a></center>
+</body>
+</html>

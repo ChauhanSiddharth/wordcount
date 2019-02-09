@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+        h1,h2,h3,p{
+            text-align: center;
+        }
+        #form{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Word Count</h1>
+    <br><br>
+    <div id="form">
+        <form action="{% url 'count' %}">
+            <textarea cols="40" rows="10" name="fulltext"></textarea> <br>
+            <input type="submit" value="Count!" />
+        </form>
+        <br>
+        <a href="{% url 'about' %}"> <button>About</button></a>
+    </div>
+</body>
+</html>
