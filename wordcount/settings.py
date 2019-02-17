@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'wordcount.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd6phfimmkegtge',
+        'USER': 'bpitenrdtohxsv',
+        'PASSWORD': 'd8da7cb84c1177444c234859d503ee03a35bcad7d362aab97fc0a34eafa9983d',
+        'HOST': 'ec2-54-83-17-151.compute-1.amazonaws.com',
+        'PORT': '5432'
     }
 }
 
