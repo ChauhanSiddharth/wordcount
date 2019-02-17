@@ -25,7 +25,7 @@ SECRET_KEY = 'd4orikxztakn&c55pz#*x)dm)ycrm4op(+pjg3i5dz&axnq^wk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["wordcountkaran.herokuapp.com"]
+ALLOWED_HOSTS = ['wordcountkaran.herokuapp.com']
 
 
 # Application definition
