@@ -25,7 +25,7 @@ SECRET_KEY = 'd4orikxztakn&c55pz#*x)dm)ycrm4op(+pjg3i5dz&axnq^wk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['wordcountkaran.herokuapp.com']
+ALLOWED_HOSTS = ['wordcountbysid.herokuapp.com']
 
 
 # Application definition
@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'wordcount.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', #Heroku Database
         'NAME': 'd6phfimmkegtge',
         'USER': 'bpitenrdtohxsv',
         'PASSWORD': 'd8da7cb84c1177444c234859d503ee03a35bcad7d362aab97fc0a34eafa9983d',
