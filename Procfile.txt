@@ -1,1 +1,2 @@
 web: gunicorn wordcountbysid.wsgi
+web: python manage.py runserver
